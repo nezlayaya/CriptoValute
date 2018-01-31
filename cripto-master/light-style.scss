@@ -1,0 +1,411 @@
+@import "style";
+@import "profile";
+$blueColor: #4b4fe8;
+$darkBlueColor: #32359b;
+$greyColor: #7b7ec2;
+$buttonLightColor: #6468ff;
+$violetColorLight: #b8bdff;
+$inputBg: #e8e9ff;
+$inputText: #878aff;
+$whiteBg : #f4f4ff;
+$greyColorLight: #9495cb;
+
+
+body{
+  background-color: #eaebff;
+  color: $greyColor;
+}
+
+h3{
+  color: $darkBlueColor;
+}
+
+.wrapper {
+  background-image: linear-gradient(140deg, $whiteBg 30%, transparent 30%);
+}
+
+.logo-wrapper .logo{
+  background: url("../img/logo-light.svg") no-repeat;
+  width: 114px;
+  height: 22px;
+}
+
+.logo-wrapper .version-btn{
+  background: transparent url(../img/sun.svg) no-repeat 5% 50%;
+  color: $blueColor;
+}
+
+nav ul a{
+  color: $greyColor;
+  &:hover{
+    color: $darkBlueColor;
+  }
+}
+
+nav button.login{
+  border-color: $blueColor;
+  color: $darkBlueColor;
+  &.sign-up{
+    background-color: $buttonLightColor;
+  }
+}
+
+.content h1,
+.content p{
+  color: $darkBlueColor;
+}
+
+.exchange{
+  background-color: $violetColorLight;
+}
+
+.exchange-btn{
+  background-color: $buttonLightColor;
+}
+
+.sum,
+.wrapper-dropdown{
+  background-color: $inputBg;
+  color: $blueColor;
+}
+
+.sum{
+  color: $inputText;
+}
+
+.wrapper-dropdown .dropdown{
+  background-color: $inputBg;
+  color: $inputText;
+}
+
+.wrapper-dropdown .dropdown li:hover a{
+  color: $blueColor;
+}
+
+.exchange-button{
+  background: transparent url("../img/exchange-light.svg");
+}
+
+.news-wrapper .news-item h4{
+  color: $darkViolet;
+}
+
+.currencies .currencies-wrapper .currencies_item-img-wrapper{
+  border: solid 3px #b1b2e3;
+  &.btc{
+    background-image: url("../img/btc-lightV.svg");
+  }
+  &.ltc{
+    background-image: url("../img/ltc-lightV.svg");
+  }
+  &.dash{
+    background-image: url("../img/dash-lightV.svg");
+  }
+  &.shape{
+    background-image: url("../img/btc-cash-lightV.svg");
+  }
+  &.ethereum{
+    background-image: url("../img/group-lightV.svg");
+  }
+}
+
+.currencies .currencies-wrapper .currencies_item span{
+  color: $darkBlueColor;
+}
+
+.exchange-rate span{
+  color: #7879cb;
+}
+
+.table .row:nth-child(odd){
+  background-color: $whiteBg;
+}
+
+.table .row:nth-child(even){
+  background-color: #dbdcff;
+}
+
+.exchange-rate .table .row .col{
+  color: $darkBlueColor;
+}
+
+.table .row.head .col{
+  color: $blueColor;
+}
+
+.login-popup.active,
+.sign-up-popup.active,
+.exchange-popup.active,
+.cancel-exchange-popup.active,
+.confirm-change-popup.active{
+  background-color: $whiteBg;
+  box-shadow: 0 12px 24px 0 #9295c2;
+  p{
+    color: #8283d5;
+    a{
+      color: $buttonLightColor;
+    }
+  }
+}
+
+.login-popup.active input,
+.sign-up-popup.active input,
+.exchange-popup.active input,
+.cancel-exchange-popup.active input,
+.confirm-change-popup.active input{
+  background-color: #fff;
+}
+.login-popup.active .login-popup_btn,
+.login-popup.active .sign-up_btn,
+.login-popup.active .exchange_btn,
+.sign-up-popup.active .login-popup_btn,
+.sign-up-popup.active .sign-up_btn,
+.sign-up-popup.active .exchange_btn,
+.exchange-popup.active .login-popup_btn,
+.exchange-popup.active .sign-up_btn,
+.exchange-popup.active .exchange_btn,
+.cancel-exchange-popup.active .login-popup_btn,
+.cancel-exchange-popup.active .sign-up_btn,
+.cancel-exchange-popup.active .exchange_btn,
+.confirm-change-popup.active .login-popup_btn,
+.confirm-change-popup.active .sign-up_btn,
+.confirm-change-popup.active .exchange_btn{
+  background-color: #6468ff;
+}
+
+.close .img-wrapper{
+    background-image: url("../img/close-lightV.svg");
+}
+
+footer{
+  background-color: #d8d9f6;
+  p,
+  .container ul li a{
+    color: $darkBlueColor;
+  }
+}
+
+.profile-header{
+  background-color: $whiteBg;
+}
+
+.profile a:after{
+  background-image: url("../img/log-out-lightV.svg");
+}
+
+.tabs-wrapper input:checked + label{
+  background-color: $buttonLightColor;
+}
+
+.tabs-wrapper label{
+  color: $greyColorLight;
+}
+
+.tabs-wrapper_settings .img-wrapper {
+  width: 48px;
+  height: 48px;
+  margin: 0 20px 0 0;
+  &.personal{
+    background-image: url("../img/personal-info-lightV.svg");
+  }
+  &.payment{
+    background-image: url("../img/payment-info-lightV.svg");
+  }
+  &.settings{
+    background-image: url("../img/settings-lightV.svg");
+  }
+}
+
+.tabs-wrapper_settings input{
+  background-color: #fff;
+  color: #8283d5;
+  &::-webkit-input-placeholder {
+    color: #8283d5;
+  }
+  &::-moz-placeholder {
+    color: #8283d5;
+  }
+  &:-moz-placeholder {
+    color: #8283d5;
+  }
+  &:-ms-input-placeholder {
+    color: #8283d5;
+  }
+}
+
+.tabs-wrapper_settings:first-child .tabs-wrapper_settings_title+input{
+  color: rgba(130, 131, 213, 0.6);
+  &::-webkit-input-placeholder {
+    color: rgba(130, 131, 213, 0.6);
+  }
+  &::-moz-placeholder {
+    color: rgba(130, 131, 213, 0.6);
+  }
+  &:-moz-placeholder {
+    color: rgba(130, 131, 213, 0.6);
+  }
+  &:-ms-input-placeholder {
+    color: rgba(130, 131, 213, 0.6);;
+  }
+}
+
+.checkbox-wrapper .checkbox__text:before{
+  background-color: #6e72fd;
+}
+
+.checkbox-wrapper .checkbox input:checked + .checkbox__text:before{
+  background-color: #b3b5fe;
+  box-shadow: 0 0 5px 0 rgba(55, 58, 178, 0.31);
+}
+
+.checkbox-wrapper .checkbox__text:after{
+  background-color: #6e72fd;
+  box-shadow: 0 0 5px 0 rgba(23, 26, 130, 0.31);
+}
+
+.checkbox-wrapper .checkbox input:checked + .checkbox__text:after{
+  background-color: #b3b5fe;
+}
+
+.footer-profile .container ul li a,
+.footer-profile .container p{
+  color: $greyColorLight;
+}
+
+.exchanges-confirmed{
+  background-color: $whiteBg;
+  box-shadow: 0 12px 24px 0 #cbcce5;
+  p{
+    color: $darkBlueColor;
+  }
+}
+
+.exchanges-confirmed .img-wrapper{
+  background-image: url("../img/confirm-lightV.svg");
+}
+
+.waiting{
+  color: $greyColorLight;
+}
+
+.table .row .col{
+  color: #4346b4;
+}
+
+.tabs-wrapper_settings p {
+  color: $darkBlueColor;
+  span {
+    color: $greyColor;
+  }
+}
+
+.assets-item,
+.assets-item_deposit-info.active,
+.assets-item_withdraw-info.active{
+  background-color: #d7d9ff;
+  box-shadow: 0 12px 24px 0 rgba(170, 172, 208, 0.8);
+}
+
+.assets-item_info .title .currencies-name,
+.assets-item_info .title .concluded{
+  color: $greyColor;
+}
+
+.assets-item .assets-item_info .account{
+  color: $darkBlueColor;
+}
+
+.assets-item .assets-item_info button{
+  background-color: $buttonLightColor;
+  &.active{
+    background-color: $greyColorLight;
+  }
+}
+
+.assets-item_deposit-info.active input.copy-address,
+.assets-item_withdraw-info.active input.copy-address,
+.assets-item_withdraw-info.active input,
+.assets-item_deposit-info.active input{
+  background-color: $inputBg;
+  color: #878aff;
+  &::-webkit-input-placeholder {
+    color: #878aff;
+  }
+  &::-moz-placeholder {
+    color: #878aff;
+  }
+  &:-moz-placeholder {
+    color: #878aff;
+  }
+  &:-ms-input-placeholder {
+    color: #878aff;
+  }
+}
+
+.assets-item_deposit-info.active button.cancel,
+.assets-item_withdraw-info.active button.cancel{
+  background-color: #a4a6ff;
+}
+
+.assets-item_deposit-info.active .title span,
+.assets-item_withdraw-info.active .title span{
+  color: $darkBlueColor;
+}
+
+.referral-link{
+  background-color: #d7d9ff;
+  box-shadow: 0 12px 24px 0 #9c9ec8;
+}
+
+.referral-link .link-for-copy input{
+  background-color: $inputBg;
+  font-size: 14px;
+}
+
+.referral-link .link-for-copy .copy-link-btn{
+  background-color: $buttonLightColor;
+}
+
+.title .social span{
+  color: $buttonLightColor;
+}
+
+.referral-program-wrapper p{
+  color: $greyColor;
+  line-height: 1.5;
+}
+
+.wrapper-statistic .wrapper-statistic_item .wrapper-statistic_item-col div span:first-child{
+  color: $darkBlueColor;
+}
+
+.wrapper-statistic .wrapper-statistic_item .wrapper-statistic_item-col div span{
+  color: $greyColor;
+}
+
+.container.rules span{
+  color: $darkBlueColor;
+}
+
+.container.rules p,
+.news-item.latest p{
+  color: $greyColor;
+}
+
+.news-item.latest span{
+  font-size: 12px;
+}
+
+.questions a{
+  color: $darkBlueColor;
+}
+
+.news .sort-by{
+  font-size: 12px;
+  color: #7879cb;
+}
+
+.news-item.latest h4{
+  color: $darkBlueColor;
+  font-family: robotobold;
+}

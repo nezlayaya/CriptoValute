@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+    <meta charset="UTF-8">
+    <title>Rules</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <!--<link rel="stylesheet" href="css/light-style.css">-->
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+<header class="profile-header">
+    <div class="container">
+        <div class="logo-wrapper">
+            <a href="#" class="logo"></a>
+            <button class="version-btn"><span>Night version</span></button>
+        </div>
+        <button class="mobile-menu"></button>
+        <nav>
+            <div class="close"><div class="img-wrapper"></div></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="latest-news.html">News</a></li>
+            </ul>
+            <button class="login">Login</button>
+            <button class="sign-up">Sign Up</button>
+        </nav>
+    </div>
+    <div class="container">
+        <section class="exchange">
+            <div>
+                <div class="wrapper-dropdown">DASH
+                    <ul class="dropdown">
+                        <li><a href="#">BTC</a></li>
+                        <li><a href="#">LTC</a></li>
+                        <li><a href="#">DASH</a></li>
+                        <li><a href="#">BCH</a></li>
+                        <li><a href="#">ETH</a></li>
+                        <li><a href="#">USD</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="sum">
+            </div>
+            <button class="img-wrapper exchange-button"></button>
+            <div>
+                <div class="wrapper-dropdown">DASH
+                    <ul class="dropdown">
+                        <li><a href="#">BTC</a></li>
+                        <li><a href="#">LTC</a></li>
+                        <li><a href="#">DASH</a></li>
+                        <li><a href="#">BCH</a></li>
+                        <li><a href="#">ETH</a></li>
+                        <li><a href="#">USD</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="sum">
+            </div>
+            <button class="exchange-btn">Exchange</button>
+        </section>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <section class="tabs-wrapper">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Profile and Settings</label>
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">History and Requests</label>
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Assets</label>
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4">Referal Program</label>
+            <section id="content1">
+                <div class="content-wrapper">
+                    <div class="tabs-wrapper_settings">
+                        <div class="tabs-wrapper_settings_title">
+                            <div class="img-wrapper personal"></div>
+                            <h3>Personal info</h3>
+                        </div>
+                        <input type="text" placeholder="Personal ID: 457848987365654">
+                        <input type="text" placeholder="Username: 457848987365654">
+                        <input type="text" placeholder="Email: useruser@gmail.com4">
+                        <input type="text" placeholder="Phone:">
+                        <input type="text" placeholder="Current Password:">
+                        <input type="text" placeholder="New Password: ">
+                        <input type="text" placeholder="Repeat New:">
+                        <button class="cancel-btn">Cancel</button>
+                        <button class="save-btn">Save</button>
+                    </div>
+                    <div class="tabs-wrapper_settings">
+                        <div class="tabs-wrapper_settings_title">
+                            <div class="img-wrapper payment"></div>
+                            <h3>Payment info:</h3>
+                        </div>
+                        <input type="text" placeholder="First Name: Alex">
+                        <input type="text" placeholder="Last Name: Malex">
+                        <input type="text" placeholder="Card number:   * * * *   * * * *   * * * *   1234">
+                        <input type="text" placeholder="Valid Thru:   12/12/2022">
+                        <input type="text" placeholder="CVV:   * * *">
+                        <button class="cancel-btn">Cancel</button>
+                        <button class="save-btn">Save</button>
+                    </div>
+                    <div class="tabs-wrapper_settings">
+                        <div class="tabs-wrapper_settings_title">
+                            <div class="img-wrapper settings"></div>
+                            <h3>Settings:</h3>
+                        </div>
+                        <h3>Notifications:</h3>
+                        <div class="checkbox-wrapper">
+                            <label class="checkbox">
+                                <input type="checkbox"/>
+                                <div class="checkbox__text">Push notifications about applications status</div>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <label class="checkbox">
+                                <input type="checkbox"/>
+                                <div class="checkbox__text">Email notifications about applications status</div>
+                            </label>
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------View after the user entered data--------------------->
+
+                    <!--<div class="tabs-wrapper_settings">-->
+                    <!--<div class="tabs-wrapper_settings_title">-->
+                    <!--<div class="img-wrapper personal">-->
+                    <!--</div>-->
+                    <!--<h3>Personal info</h3>-->
+                    <!--</div>-->
+                    <!--<p>Personal ID: <span>457848987365654</span></p>-->
+                    <!--<p>Username: <span>457848987365654</span></p>-->
+                    <!--<p>Email: <span>useruser@gmail.com</span></p>-->
+                    <!--<p>Phone: <span>no number added</span></p>-->
+                    <!--<p>Password:<span>* * * * * * * *</span></p>-->
+                    <!--<a href="#">Edit info</a>-->
+                    <!--</div>-->
+                    <!--<div class="tabs-wrapper_settings">-->
+                    <!--<div class="tabs-wrapper_settings_title">-->
+                    <!--<div class="img-wrapper payment">-->
+                    <!--</div>-->
+                    <!--<h3>Payment info:</h3>-->
+                    <!--</div>-->
+                    <!--<p>First Name: <span>Alex</span></p>-->
+                    <!--<p>Last Name: <span>Malex</span></p>-->
+                    <!--<p>Card number: <span> * * * *   * * * *   * * * *   1234</span></p>-->
+                    <!--<p>Valid Thru: <span>12/12/2022</span></p>-->
+                    <!--<p>CVV: <span> * * *</span></p>-->
+                    <!--<a href="#">Edit info</a>-->
+                    <!--</div>-->
+                    <!--<div class="tabs-wrapper_settings">-->
+                    <!--<div class="tabs-wrapper_settings_title">-->
+                    <!--<div class="img-wrapper settings"></div>-->
+                    <!--<h3>Settings:</h3>-->
+                    <!--</div>-->
+                    <!--<h3>Notifications:</h3>-->
+                    <!--<div class="checkbox-wrapper">-->
+                    <!--<label class="checkbox">-->
+                    <!--<input type="checkbox"/>-->
+                    <!--<div class="checkbox__text">Push notifications about applications status</div>-->
+                    <!--</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox-wrapper">-->
+                    <!--<label class="checkbox">-->
+                    <!--<input type="checkbox"/>-->
+                    <!--<div class="checkbox__text">Email notifications about applications status</div>-->
+                    <!--</label>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </section>
+            <section id="content2">
+                <div class="content-wrapper">
+                    <div class="table">
+                        <h3>Current Requests</h3>
+                        <div class="row head">
+                            <div class="col">Time</div>
+                            <div class="col">Buy</div>
+                            <div class="col">Amount</div>
+                            <div class="col">Sell</div>
+                            <div class="col">Amount</div>
+                            <div class="col">Actions</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">10:12</div>
+                            <div class="col">Bitcoin</div>
+                            <div class="col">100 BTC</div>
+                            <div class="col">Litecoin</div>
+                            <div class="col">100 BTC</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">16:22</div>
+                            <div class="col">Litecoin</div>
+                            <div class="col">1000 BTC</div>
+                            <div class="col">Dash</div>
+                            <div class="col">1000 BTC</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">14:41</div>
+                            <div class="col">Dash</div>
+                            <div class="col">0.002 BTC</div>
+                            <div class="col">Bitcoin Cash</div>
+                            <div class="col">0.002 BTC</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">09:18</div>
+                            <div class="col">Bitcoin Cash</div>
+                            <div class="col">0.0001 BTH</div>
+                            <div class="col">Ethereum</div>
+                            <div class="col">0.0001 BTH</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">21:16</div>
+                            <div class="col">Ethereum</div>
+                            <div class="col">10000 USD</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">10000 USD</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">00:01</div>
+                            <div class="col">Litecoin</div>
+                            <div class="col">1265765 USD</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">1265765 USD</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">12:34</div>
+                            <div class="col">Bitcoin</div>
+                            <div class="col">100 BTC</div>
+                            <div class="col">Bitcoin</div>
+                            <div class="col">100 BTC</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">11:07</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">0.036745 ETH</div>
+                            <div class="col">Litecoin</div>
+                            <div class="col">0.036745 ETH</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">19:28</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">125 USD</div>
+                            <div class="col">Dash</div>
+                            <div class="col">125 USD</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">08:14</div>
+                            <div class="col">Bitcoin Cash</div>
+                            <div class="col">0.0025 USD</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">0.0025 USD</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">06:35</div>
+                            <div class="col">Ethereum</div>
+                            <div class="col">1245678 USD</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">1245678 USD</div>
+                            <div class="col">
+                                <button class="del"></button>
+                                <button class="ok"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="title"><h3>History of exchanges</h3>
+                            <p class="sort-by">Sort by: Date (A-Z)</p></div>
+                        <div class="row head">
+                            <div class="col">Time</div>
+                            <div class="col">Buy</div>
+                            <div class="col">Amount</div>
+                            <div class="col">Sell</div>
+                            <div class="col">Amount</div>
+                            <div class="col">Actions</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">10:12</div>
+                            <div class="col">Bitcoin</div>
+                            <div class="col">100 BTC</div>
+                            <div class="col">Litecoin</div>
+                            <div class="col">100 BTC</div>
+                            <div class="col">
+                                <span class="complete">Complete</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">16:22</div>
+                            <div class="col">Litecoin</div>
+                            <div class="col">1000 BTC</div>
+                            <div class="col">Dash</div>
+                            <div class="col">1000 BTC</div>
+                            <div class="col">
+                                <span class="waiting">Waiting</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">14:41</div>
+                            <div class="col">Dash</div>
+                            <div class="col">0.002 BTC</div>
+                            <div class="col">Bitcoin Cash</div>
+                            <div class="col">0.002 BTC</div>
+                            <div class="col">
+                                <span class="canceled">Canceled</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">09:18</div>
+                            <div class="col">Bitcoin Cash</div>
+                            <div class="col">0.0001 BTH</div>
+                            <div class="col">Ethereum</div>
+                            <div class="col">0.0001 BTH</div>
+                            <div class="col">
+                                <span class="complete">Complete</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">21:16</div>
+                            <div class="col">Ethereum</div>
+                            <div class="col">10000 USD</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">10000 USD</div>
+                            <div class="col">
+                                <span class="complete">Complete</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">00:01</div>
+                            <div class="col">Litecoin</div>
+                            <div class="col">1265765 USD</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">1265765 USD</div>
+                            <div class="col">
+                                <span class="waiting">Waiting</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">12:34</div>
+                            <div class="col">Bitcoin</div>
+                            <div class="col">100 BTC</div>
+                            <div class="col">Bitcoin</div>
+                            <div class="col">100 BTC</div>
+                            <div class="col">
+                                <span class="complete">Complete</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">11:07</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">0.036745 ETH</div>
+                            <div class="col">Litecoin</div>
+                            <div class="col">0.036745 ETH</div>
+                            <div class="col">
+                                <span class="waiting">Waiting</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">19:28</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">125 USD</div>
+                            <div class="col">Dash</div>
+                            <div class="col">125 USD</div>
+                            <div class="col">
+                                <span class="canceled">Canceled</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">08:14</div>
+                            <div class="col">Bitcoin Cash</div>
+                            <div class="col">0.0025 USD</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">0.0025 USD</div>
+                            <div class="col">
+                                <span class="complete">Complete</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">06:35</div>
+                            <div class="col">Ethereum</div>
+                            <div class="col">1245678 USD</div>
+                            <div class="col">US Dollar</div>
+                            <div class="col">1245678 USD</div>
+                            <div class="col">
+                                <span class="complete">Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="content3">
+                <div class="content-wrapper">
+                    <div class="assets-item-wrapper">
+                        <div class="assets-item">
+                            <div class="img-wrapper"><img src="img/btc-blue.svg" alt="btc-blue"></div>
+                            <div class="assets-item_info">
+                                <div class="title">
+                                    <span class="currencies-name">Bitcoin (BTC)</span>
+                                    <span class="concluded">0.00000</span>
+                                </div>
+                                <p class="account">0.00002</p>
+                                <button class="deposit" onclick="toggleDeposit('dashWindow1', 'add')">Deposit</button>
+                                <button class="withdraw" onclick="toggleWithdraw('withWindow1', 'add')">Withdraw
+                                </button>
+                            </div>
+                        </div>
+                        <div id="dashWindow1" class="assets-item_deposit-info">
+                            <div class="title">
+                                <span>Deposit DASH</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_deposit-info_content">
+                                <p>
+                                    <span>Commission will be charged as a network commission transaction fee.</span>
+                                    <span>Required number of confirmations: 12
+                                    Amount less than 0.01 ETH will not be deposited.</span>
+                                </p>
+                                <div class="img-wrapper"><img src="img/barcode.jpg" alt=""></div>
+                            </div>
+                            <input type="text" class="copy-address" placeholder="Address:  0x971845e8a387d33a1444eaa…">
+                            <button class="cancel" onclick="toggleDeposit('dashWindow1', 'remove')">Cancel</button>
+                        </div>
+                        <div id="withWindow1" class="assets-item_withdraw-info">
+                            <div class="title">
+                                <span>Withdraw BTC</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_withdraw_content">
+                                <span>Minimal amount to withdraw: 0.01 BTC. </span>
+                                <span>Fee: 0.01 ETH</span>
+                            </div>
+                            <input type="text" placeholder="Wallet:">
+                            <input type="text" placeholder="Balance:">
+                            <input type="text" placeholder="Amount:">
+                            <div class="btn-wrapper">
+                                <button class="cancel" onclick="toggleDeposit('withWindow1', 'remove')">Cancel</button>
+                                <button class="withdraw-btn">Withdraw money</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assets-item-wrapper">
+                        <div class="assets-item">
+                            <div class="img-wrapper"><img src="img/ltc-blue.svg" alt="btc-blue"></div>
+                            <div class="assets-item_info">
+                                <div class="title">
+                                    <span class="currencies-name">Bitcoin (BTC)</span>
+                                    <span class="concluded">0.00000</span>
+                                </div>
+                                <p class="account">0.00002</p>
+                                <button class="deposit" onclick="toggleDeposit('dashWindow2', 'add')">Deposit</button>
+                                <button class="withdraw" onclick="toggleWithdraw('withWindow2', 'add')">Withdraw
+                                </button>
+                            </div>
+                        </div>
+                        <div id="dashWindow2" class="assets-item_deposit-info">
+                            <div class="title">
+                                <span>Deposit DASH</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_deposit-info_content">
+                                <p>
+                                    <span>Commission will be charged as a network commission transaction fee.</span>
+                                    <span>Required number of confirmations: 12
+                                    Amount less than 0.01 ETH will not be deposited.</span>
+                                </p>
+                                <div class="img-wrapper"><img src="img/barcode.jpg" alt=""></div>
+                            </div>
+                            <input type="text" class="copy-address" placeholder="Address:  0x971845e8a387d33a1444eaa…">
+                            <button class="cancel" onclick="toggleDeposit('dashWindow2', 'remove')">Cancel</button>
+                        </div>
+                        <div id="withWindow2" class="assets-item_withdraw-info">
+                            <div class="title">
+                                <span>Withdraw BTC</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_withdraw_content">
+                                <span>Minimal amount to withdraw: 0.01 BTC. </span>
+                                <span>Fee: 0.01 ETH</span>
+                            </div>
+                            <input type="text" placeholder="Wallet:">
+                            <input type="text" placeholder="Balance:">
+                            <input type="text" placeholder="Amount:">
+                            <div class="btn-wrapper">
+                                <button class="cancel" onclick="toggleDeposit('withWindow2', 'remove')">Cancel</button>
+                                <button class="withdraw-btn">Withdraw money</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assets-item-wrapper">
+                        <div class="assets-item">
+                            <div class="img-wrapper"><img src="img/dash-blue.svg" alt="btc-blue"></div>
+                            <div class="assets-item_info">
+                                <div class="title">
+                                    <span class="currencies-name">Bitcoin (BTC)</span>
+                                    <span class="concluded">0.00000</span>
+                                </div>
+                                <p class="account">0.00002</p>
+                                <button class="deposit" onclick="toggleDeposit('dashWindow3', 'add')">Deposit</button>
+                                <button class="withdraw" onclick="toggleWithdraw('withWindow3', 'add')">Withdraw
+                                </button>
+                            </div>
+                        </div>
+                        <div id="dashWindow3" class="assets-item_deposit-info">
+                            <div class="title">
+                                <span>Deposit DASH</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_deposit-info_content">
+                                <p>
+                                    <span>Commission will be charged as a network commission transaction fee.</span>
+                                    <span>Required number of confirmations: 12
+                                    Amount less than 0.01 ETH will not be deposited.</span>
+                                </p>
+                                <div class="img-wrapper"><img src="img/barcode.jpg" alt=""></div>
+                            </div>
+                            <input type="text" class="copy-address" placeholder="Address:  0x971845e8a387d33a1444eaa…">
+                            <button class="cancel" onclick="toggleDeposit('dashWindow3', 'remove')">Cancel</button>
+                        </div>
+                        <div id="withWindow3" class="assets-item_withdraw-info">
+                            <div class="title">
+                                <span>Withdraw BTC</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_withdraw_content">
+                                <span>Minimal amount to withdraw: 0.01 BTC. </span>
+                                <span>Fee: 0.01 ETH</span>
+                            </div>
+                            <input type="text" placeholder="Wallet:">
+                            <input type="text" placeholder="Balance:">
+                            <input type="text" placeholder="Amount:">
+                            <div class="btn-wrapper">
+                                <button class="cancel" onclick="toggleDeposit('withWindow3', 'remove')">Cancel</button>
+                                <button class="withdraw-btn">Withdraw money</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assets-item-wrapper">
+                        <div class="assets-item">
+                            <div class="img-wrapper"><img src="img/btc-cash.svg" alt="btc-blue"></div>
+                            <div class="assets-item_info">
+                                <div class="title">
+                                    <span class="currencies-name">Bitcoin (BTC)</span>
+                                    <span class="concluded">0.00000</span>
+                                </div>
+                                <p class="account">0.00002</p>
+                                <button class="deposit" onclick="toggleDeposit('dashWindow4', 'add')">Deposit</button>
+                                <button class="withdraw" onclick="toggleWithdraw('withWindow4', 'add')">Withdraw
+                                </button>
+                            </div>
+                        </div>
+                        <div id="dashWindow4" class="assets-item_deposit-info">
+                            <div class="title">
+                                <span>Deposit DASH</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_deposit-info_content">
+                                <p>
+                                    <span>Commission will be charged as a network commission transaction fee.</span>
+                                    <span>Required number of confirmations: 12
+                                    Amount less than 0.01 ETH will not be deposited.</span>
+                                </p>
+                                <div class="img-wrapper"><img src="img/barcode.jpg" alt=""></div>
+                            </div>
+                            <input type="text" class="copy-address" placeholder="Address:  0x971845e8a387d33a1444eaa…">
+                            <button class="cancel" onclick="toggleDeposit('dashWindow4', 'remove')">Cancel</button>
+                        </div>
+                        <div id="withWindow4" class="assets-item_withdraw-info">
+                            <div class="title">
+                                <span>Withdraw BTC</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_withdraw_content">
+                                <span>Minimal amount to withdraw: 0.01 BTC. </span>
+                                <span>Fee: 0.01 ETH</span>
+                            </div>
+                            <input type="text" placeholder="Wallet:">
+                            <input type="text" placeholder="Balance:">
+                            <input type="text" placeholder="Amount:">
+                            <div class="btn-wrapper">
+                                <button class="cancel" onclick="toggleDeposit('withWindow4', 'remove')">Cancel</button>
+                                <button class="withdraw-btn">Withdraw money</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assets-item-wrapper">
+                        <div class="assets-item">
+                            <div class="img-wrapper"><img src="img/group-blue.svg" alt="btc-blue"></div>
+                            <div class="assets-item_info">
+                                <div class="title">
+                                    <span class="currencies-name">Bitcoin (BTC)</span>
+                                    <span class="concluded">0.00000</span>
+                                </div>
+                                <p class="account">0.00002</p>
+                                <button class="deposit" onclick="toggleDeposit('dashWindow5', 'add')">Deposit</button>
+                                <button class="withdraw" onclick="toggleWithdraw('withWindow5', 'add')">Withdraw
+                                </button>
+                            </div>
+                        </div>
+                        <div id="dashWindow5" class="assets-item_deposit-info">
+                            <div class="title">
+                                <span class="currencies-name">Deposit DASH</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_deposit-info_content">
+                                <p>
+                                    <span>Commission will be charged as a network commission transaction fee.</span>
+                                    <span>Required number of confirmations: 12
+                                    Amount less than 0.01 ETH will not be deposited.</span>
+                                </p>
+                                <div class="img-wrapper"><img src="img/barcode.jpg" alt=""></div>
+                            </div>
+                            <input type="text" class="copy-address" placeholder="Address:  0x971845e8a387d33a1444eaa…">
+                            <button class="cancel" onclick="toggleDeposit('dashWindow5', 'remove')">Cancel</button>
+                        </div>
+                        <div id="withWindow5" class="assets-item_withdraw-info">
+                            <div class="title">
+                                <span>Withdraw BTC</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_withdraw_content">
+                                <span>Minimal amount to withdraw: 0.01 BTC. </span>
+                                <span>Fee: 0.01 ETH</span>
+                            </div>
+                            <input type="text" placeholder="Wallet:">
+                            <input type="text" placeholder="Balance:">
+                            <input type="text" placeholder="Amount:">
+                            <div class="btn-wrapper">
+                                <button class="cancel" onclick="toggleWithdraw('withWindow5', 'remove')">Cancel</button>
+                                <button class="withdraw-btn">Withdraw money</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assets-item-wrapper">
+                        <div class="assets-item">
+                            <div class="img-wrapper"><img src="img/dol-blue.svg" alt="btc-blue"></div>
+                            <div class="assets-item_info">
+                                <div class="title">
+                                    <span class="currencies-name">Bitcoin (BTC)</span>
+                                    <span class="concluded">0.00000</span>
+                                </div>
+                                <p class="account">0.00002</p>
+                                <button class="deposit" onclick="toggleDeposit('dashWindow6', 'add')">Deposit</button>
+                                <button class="withdraw" onclick="toggleWithdraw('withWindow6', 'add')">Withdraw
+                                </button>
+                            </div>
+                        </div>
+                        <div id="dashWindow6" class="assets-item_deposit-info">
+                            <div class="title">
+                                <span>Deposit DASH</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_deposit-info_content">
+                                <p>
+                                    <span>Commission will be charged as a network commission transaction fee.</span>
+                                    <span>Required number of confirmations: 12
+                                    Amount less than 0.01 ETH will not be deposited.</span>
+                                </p>
+                                <div class="img-wrapper"><img src="img/barcode.jpg" alt=""></div>
+                            </div>
+                            <input type="text" class="copy-address" placeholder="Address:  0x971845e8a387d33a1444eaa…">
+                            <button class="cancel" onclick="toggleDeposit('dashWindow6', 'remove')">Cancel</button>
+                        </div>
+                        <div id="withWindow6" class="assets-item_withdraw-info">
+                            <div class="title">
+                                <span>Withdraw BTC</span>
+                                <button class="question"></button>
+                            </div>
+                            <div class="assets-item_withdraw_content">
+                                <span>Minimal amount to withdraw: 0.01 BTC. </span>
+                                <span>Fee: 0.01 ETH</span>
+                            </div>
+                            <input type="text" placeholder="Wallet:">
+                            <input type="text" placeholder="Balance:">
+                            <input type="text" placeholder="Amount:">
+                            <div class="btn-wrapper">
+                                <button class="cancel" onclick="toggleWithdraw('withWindow6', 'remove')">Cancel</button>
+                                <button class="withdraw-btn">Withdraw money</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="content4">
+                <h3>Referral program</h3>
+                <div class="content-wrapper referral-program">
+                    <div class="referral-program-wrapper">
+                        <p>Referral program - the type of earnings for registered users, in the form
+                            of rewards for exchanges of customers who came to us for your referral link.
+                        </p>
+                        <p>
+                            Share the affiliate link use promotional materials, attract acquaintances
+                            and earn up to 1% for exchanges of your referrals.
+                        </p>
+                    </div>
+                    <div class="referral-link">
+                        <div class="title">
+                            <h3>Your link to invite friends:</h3>
+                            <div class="social">
+                                <span>Share:</span>
+                                <ul>
+                                    <li>
+                                        <div class="img-wrapper">
+                                            <img src="img/pinterest.svg" alt="pienterest">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-wrapper">
+                                            <img src="img/google-plus.svg" alt="google">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-wrapper">
+                                            <img src="img/twitter.svg" alt="google">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-wrapper">
+                                            <img src="img/fb.svg" alt="google">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="link-for-copy">
+                            <input type="text"
+                                   placeholder="http://jexchanger/?ref_hash=fcaee6c1b9938a6d695bb140576ef234">
+                            <button class="copy-link-btn">Copy Link</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-statistic">
+                    <div class="wrapper-statistic_item">
+                        <h3>Transition statistics:</h3>
+                        <div class="wrapper-statistic_item-col">
+                            <div>
+                                <span>000000</span>
+                                <span>Number of referrals via referral link</span>
+                            </div>
+                            <div>
+                                <span>000000</span>
+                                <span>Referrals registered </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-statistic_item">
+                        <h3>Earned funds:</h3>
+                        <div class="wrapper-statistic_item-col">
+                            <div>
+                                <span>000000</span>
+                                <span>US Dollars</span>
+                            </div>
+                            <div>
+                                <span>000000</span>
+                                <span>US Dollars</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-statistic_item">
+                        <h3>Rewards:</h3>
+                        <div class="wrapper-statistic_item-col">
+                            <div>
+                                <span>000000</span>
+                                <span>US Dollars</span>
+                            </div>
+                            <div>
+                                <span>000000</span>
+                                <span>US Dollars</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <div class="exchanges-confirmed">
+        <div class="img-wrapper"></div>
+        <p>Your exchange has been confirmed successfully</p>
+    </div>
+</main>
+<footer class="footer-profile">
+    <div class="container">
+        <p>(c) JExchanger 2018. All rights reserved</p>
+        <ul>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </div>
+</footer>
+<div class="login-popup">
+    <div class="close"><div class="img-wrapper"></div></div>
+    <h3>Login to JExchanger</h3>
+    <input type="email" placeholder="Your Email *">
+    <input type="password" placeholder="Password *">
+    <input type="submit" value="Login" class="login-popup_btn">
+    <p>Forgot password? <a href="#" class="forgot-password">Press here</a></p>
+    <p>Dont have an account? You can<a href="#" class="forgot-password"> Sign Up here</a></p>
+</div>
+<div class="sign-up-popup">
+    <div class="close"><div class="img-wrapper"></div></div>
+    <h3>Sign Up to JExchanger</h3>
+    <!--<p class="your-request">Your request already in the basket, please sign up to-->
+    <!--JExchanger and complete your safe and quick exchange.-->
+    <!--</p>-->
+    <input type="email" placeholder="Your Email *">
+    <input type="password" placeholder="Password *">
+    <input type="submit" value="Sign Up" class="sign-up_btn">
+    <p>Already have an account? You can <a href="#">Login here</a></p>
+</div>
+<div class="exchange-popup">
+    <div class="close">
+        <div class="img-wrapper"><img src="img/close.svg" alt="close"></div>
+    </div>
+    <h3>Please, confirm your exchange</h3>
+    <form>
+        <span>You are going to exchange:</span>
+        <input type="text" placeholder="1 BTC to 15000 USD">
+        <span>Add payment details (VISA, MasterCard):</span>
+        <input type="text" placeholder="Name *">
+        <input type="text" placeholder="Card number *" maxlength="16">
+        <div class="login-popup_input-wrapper">
+            <input type="text" placeholder="Valid Thru *">
+            <input type="password" placeholder="CVV *" maxlength="3">
+        </div>
+        <input type="submit" value="Confirm exchange" class="exchange_btn">
+    </form>
+</div>
+<div class="cancel-exchange-popup">
+    <div class="close">
+        <div class="img-wrapper"><img src="img/close.svg" alt="close"></div>
+    </div>
+    <h3>Cancel Exchange request</h3>
+    <span>You are going to cancel:</span>
+    <input type="text" placeholder="1 BTC to 15000 USD">
+    <button>Cancel</button>
+</div>
+<div class="confirm-change-popup">
+    <div class="close">
+        <div class="img-wrapper"><img src="img/close.svg" alt="close"></div>
+    </div>
+    <h3>Please, confirm your exchange</h3>
+    <form>
+        <span>You are going to exchange:</span>
+        <input type="text" placeholder="1 BTC to 15000 USD">
+        <span>Add payment details (VISA, MasterCard):</span>
+        <div class="confirm-change-popup_wrapper">
+            <div>
+                <input type="checkbox" id="profile-card">
+                <label for="profile-card">Profile card ** 7525</label>
+            </div>
+            <div>
+                <input type="checkbox" id="use-another-card">
+                <label for="use-another-card" class="disabled">Use another card</label>
+            </div>
+        </div>
+        <div class="hidden">
+            <span>Add payment details (VISA, MasterCard):</span>
+            <input type="text" placeholder="Name *">
+            <input type="text" placeholder="Card number *" maxlength="16">
+            <div class="login-popup_input-wrapper">
+                <input type="text" placeholder="Valid Thru *">
+                <input type="password" placeholder="CVV *" maxlength="3">
+            </div>
+        </div>
+        <input type="submit" value="Confirm exchange" class="exchange_btn">
+    </form>
+</div>
+<script src="js/main.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>
