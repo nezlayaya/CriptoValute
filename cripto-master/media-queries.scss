@@ -435,6 +435,19 @@
       background: url("../img/to-bottom-dark.svg") 50% 50% no-repeat;
     }
   }
+
+  .table .row .col,
+  .table .row.head .col{
+    width: 33.3%;
+    flex: auto;
+    flex-direction: column;
+  }
+  .table span:first-child{
+    display: block;
+  }
+  .table .row.head{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 470px){

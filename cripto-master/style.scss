@@ -120,6 +120,7 @@ nav{
     height: 22px;
     display: inline-block;
     margin: 0 46px 0 0;
+    background-size: cover;
     background-image: url("../img/logo.svg");
   }
   .version-btn{
@@ -417,6 +418,10 @@ nav{
 .table .row .col{
   flex: 1.5;
   color: $grey;
+}
+
+.table span:first-child{
+  display: none;
 }
 
 .see-history{

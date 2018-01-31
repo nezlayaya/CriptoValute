@@ -89,6 +89,7 @@ nav {
     height: 22px;
     display: inline-block;
     margin: 0 46px 0 0;
+    background-size: cover;
     background-image: url("../img/logo.svg"); }
   .logo-wrapper .version-btn {
     border: none;
@@ -332,6 +333,9 @@ nav {
 .table .row .col {
   flex: 1.5;
   color: #9495cb; }
+
+.table span:first-child {
+  display: none; }
 
 .see-history {
   display: none; }
