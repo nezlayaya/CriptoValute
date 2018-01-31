@@ -296,7 +296,15 @@
     padding: 11px 2px;
     flex: 0.5; }
     .exchange-rate .table .row .col:last-child {
-      flex: 0.9; }
+      flex: 0.9;
+      justify-content: center; }
+
+  .table .row .col:last-child {
+    flex-direction: inherit; }
+
+  .table.history .col:last-child {
+    flex-direction: column;
+    justify-content: center; }
 
   .currencies .currencies-wrapper {
     margin: 23px 0 0 0; }
@@ -306,7 +314,8 @@
 
   .exchange-rate .table .row .col:first-child {
     flex: 0;
-    padding: 0 7px 0 0; }
+    padding: 0 7px 0 0;
+    justify-content: center; }
 
   .referral-link .link-for-copy {
     flex-direction: column;
@@ -353,10 +362,18 @@
     flex-direction: column; }
 
   .table span:first-child {
+    font-family: robotomedium;
+    color: #878aff;
     display: block; }
 
   .table .row.head {
-    display: none; } }
+    display: none; }
+
+  .table .row.head + .row {
+    padding-top: 20px; }
+
+  .table .row {
+    padding: 0 0 0 15px; } }
 @media screen and (max-width: 470px) {
   header .container .logo-wrapper {
     width: 85%; }
@@ -385,7 +402,12 @@
     justify-content: flex-start; }
 
   .table .row .col {
-    font-size: 12px; }
+    font-size: 12px;
+    align-items: flex-start; }
+
+  .table .row .col:first-child {
+    padding: 0;
+    flex: auto; }
 
   .content {
     max-width: 270px; } }

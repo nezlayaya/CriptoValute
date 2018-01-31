@@ -373,7 +373,16 @@
     flex: 0.5;
     &:last-child{
       flex: 0.9;
+      justify-content: center;
     }
+  }
+
+  .table .row .col:last-child{
+    flex-direction: inherit;
+  }
+  .table.history .col:last-child{
+    flex-direction: column;
+    justify-content: center;
   }
 
   .currencies .currencies-wrapper{
@@ -387,6 +396,7 @@
   .exchange-rate .table .row .col:first-child{
     flex: 0;
     padding: 0 7px 0 0;
+    justify-content: center;
   }
 
   .referral-link .link-for-copy{
@@ -443,10 +453,18 @@
     flex-direction: column;
   }
   .table span:first-child{
+    font-family: robotomedium;
+    color: #878aff;
     display: block;
   }
   .table .row.head{
     display: none;
+  }
+  .table .row.head+.row{
+    padding-top: 20px;
+  }
+  .table .row{
+    padding: 0 0 0 15px;
   }
 }
 
@@ -487,6 +505,12 @@
 
   .table .row .col{
     font-size: 12px;
+    align-items: flex-start;
+  }
+
+  .table .row .col:first-child{
+    padding: 0;
+    flex: auto;
   }
 
   .content{
