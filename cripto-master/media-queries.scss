@@ -466,6 +466,16 @@
   .table .row{
     padding: 0 0 0 15px;
   }
+
+  .table .row .col{
+    font-size: 12px;
+    align-items: flex-start;
+  }
+
+  .table .row .col:first-child{
+    padding: 0;
+    flex: auto;
+  }
 }
 
 @media screen and (max-width: 470px){
@@ -501,16 +511,6 @@
 
   .wrapper-exchange{
     justify-content: flex-start;
-  }
-
-  .table .row .col{
-    font-size: 12px;
-    align-items: flex-start;
-  }
-
-  .table .row .col:first-child{
-    padding: 0;
-    flex: auto;
   }
 
   .content{
