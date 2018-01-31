@@ -281,7 +281,7 @@ nav{
 
 .sum{
   height: 37px;
-  width: 384px;
+  min-width: 384px;
   background-color: $violet;
   border: none;
   border-bottom-right-radius: $borderRadius;
@@ -417,6 +417,10 @@ nav{
 .table .row .col{
   flex: 1.5;
   color: $grey;
+}
+
+.see-history{
+  display: none;
 }
 
 /*News*/
