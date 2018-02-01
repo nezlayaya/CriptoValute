@@ -101,7 +101,10 @@
     margin: 22px 0 0 0; }
 
   .referral-program-wrapper {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .exchange-button {
+    background-image: url("../img/exchange-mob-light.svg"); } }
 @media screen and (max-width: 760px) {
   nav {
     display: none; }
@@ -113,8 +116,8 @@
     align-items: flex-start; }
     header .container .version-btn {
       padding: 0;
-      width: 18px;
-      height: 18px;
+      width: 20px;
+      height: 21px;
       background-size: cover; }
       header .container .version-btn span {
         display: none; }
@@ -130,7 +133,8 @@
   .exchange-rate {
     min-width: 100%; }
     .exchange-rate .table {
-      min-width: auto; }
+      min-width: auto;
+      margin: 0; }
 
   .news-wrapper .news-item {
     width: 100%; }
@@ -144,7 +148,8 @@
     left: 0;
     height: 100vh;
     width: 100%;
-    border-radius: inherit; }
+    border-radius: inherit;
+    position: fixed; }
     .login-popup.active input,
     .sign-up-popup.active input,
     .exchange-popup.active input,
@@ -172,7 +177,7 @@
 
   .tabs-wrapper label:not(:last-child) {
     width: 49%;
-    margin: 0 0 25px 0;
+    margin: 0 0 8px 0;
     justify-content: center;
     height: 40px; }
 
@@ -181,7 +186,7 @@
     padding: 8px 13px; }
 
   .tabs-wrapper section {
-    padding: 0 0 54px; }
+    padding: 22px 0 54px; }
 
   .wrapper-statistic {
     flex-wrap: wrap;
@@ -189,6 +194,8 @@
     .wrapper-statistic .wrapper-statistic_item {
       flex: auto;
       width: 100%; }
+      .wrapper-statistic .wrapper-statistic_item:not(:last-child) {
+        padding: 0 0 26px 0; }
       .wrapper-statistic .wrapper-statistic_item .wrapper-statistic_item-col {
         justify-content: flex-start; }
         .wrapper-statistic .wrapper-statistic_item .wrapper-statistic_item-col div {
@@ -197,7 +204,8 @@
             margin: 0 64px 0 0; }
 
   .checkbox-wrapper label.checkbox {
-    max-width: 195px; }
+    max-width: 195px;
+    padding: 0; }
 
   .login-popup span,
   .sign-up-popup span,
@@ -268,7 +276,20 @@
     align-items: center; }
 
   .footer-profile {
-    background-color: #12146a; } }
+    background-color: #12146a; }
+
+  .content-wrapper.history-and-request {
+    flex-direction: column-reverse; }
+
+  .table.history {
+    margin: 0 0 37px 0; }
+
+  .content-wrapper button {
+    width: 18px;
+    height: 18px; }
+
+  .wrapper-statistic .wrapper-statistic_item h3 {
+    margin: 0 0 15px 0; } }
 @media screen and (max-width: 620px) {
   .exchange-rate .table .row .col:last-child {
     padding: 0; }
@@ -300,7 +321,8 @@
       justify-content: center; }
 
   .table .row .col:last-child {
-    flex-direction: inherit; }
+    display: block;
+    padding: 0 0 11px 0; }
 
   .table.history .col:last-child {
     flex-direction: column;
@@ -341,7 +363,8 @@
       width: auto;
       background-image: none;
       text-decoration: underline;
-      color: #fff; }
+      color: #fff;
+      font: 10px robotobold; }
       .table .title .see-history:after {
         content: '';
         display: inline-block;
@@ -364,23 +387,22 @@
   .table span:first-child {
     font-family: robotomedium;
     color: #878aff;
-    display: block; }
+    display: block;
+    padding: 0 0 7px 0; }
 
   .table .row.head {
     display: none; }
 
-  .table .row.head + .row {
-    padding-top: 20px; }
-
   .table .row {
-    padding: 0 0 0 15px; }
+    padding: 15px 0 0 15px; }
 
   .table .row .col {
     font-size: 12px;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding: 0 0 15px 0; }
 
   .table .row .col:first-child {
-    padding: 0;
+    padding: 0 0 15px 0;
     flex: auto; } }
 @media screen and (max-width: 470px) {
   header .container .logo-wrapper {

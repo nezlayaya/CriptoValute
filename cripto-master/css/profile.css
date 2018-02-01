@@ -51,16 +51,16 @@
     cursor: pointer;
     background: transparent no-repeat;
     background-size: cover; }
-    .content-wrapper button:first-child {
+    .content-wrapper button.del {
       background-image: url("../img/cancel.svg");
       margin: 0 15px 0 0; }
-    .content-wrapper button:last-child {
+    .content-wrapper button.ok {
       background-image: url("../img/confirm-profile.svg"); }
 
 .exchanges-confirmed {
-  position: absolute;
+  position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 60px;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   background-color: #4346b4;
@@ -326,7 +326,7 @@
     width: 100%;
     border-radius: 6px;
     border: none;
-    background: #4346b4 url("../img/copy.svg") no-repeat 98% 50%;
+    background: #4346b4 url("../img/copy.svg") no-repeat 96% 50%;
     /* Firefox 19+ */
     /* Firefox 18- */ }
     .assets-item_deposit-info.active input.copy-address:after,

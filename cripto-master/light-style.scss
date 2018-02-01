@@ -1,5 +1,8 @@
 @import "style";
 @import "profile";
+@import "media-queries";
+
+
 $blueColor: #4b4fe8;
 $darkBlueColor: #32359b;
 $greyColor: #7b7ec2;
@@ -137,7 +140,8 @@ nav button.login{
 .sign-up-popup.active,
 .exchange-popup.active,
 .cancel-exchange-popup.active,
-.confirm-change-popup.active{
+.confirm-change-popup.active,
+nav.mobile{
   background-color: $whiteBg;
   box-shadow: 0 12px 24px 0 #9295c2;
   p{
@@ -408,4 +412,15 @@ footer{
 .news-item.latest h4{
   color: $darkBlueColor;
   font-family: robotobold;
+}
+
+//-----For light version-----
+.mobile-menu{
+  background: transparent url(../img/menu-light.svg) no-repeat;
+}
+
+@media screen and (max-width: 760px){
+  nav.mobile ul li a{
+      color: $darkBlueColor;
+    }
 }

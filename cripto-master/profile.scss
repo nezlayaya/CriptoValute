@@ -69,20 +69,20 @@ $white: #fff;
     cursor: pointer;
     background: transparent no-repeat;
     background-size: cover;
-    &:first-child {
+    &.del {
       background-image: url("../img/cancel.svg");
       margin: 0 15px 0 0;
     }
-    &:last-child {
+    &.ok {
       background-image: url("../img/confirm-profile.svg");
     }
   }
 }
 
 .exchanges-confirmed {
-  position: absolute;
+  position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 60px;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   background-color: $violet;
@@ -406,7 +406,7 @@ $white: #fff;
     width: 100%;
     border-radius: $borderRadius;
     border: none;
-    background: $violet url("../img/copy.svg") no-repeat 98% 50%;
+    background: $violet url("../img/copy.svg") no-repeat 96% 50%;
     &:after {
       content: '';
       display: inline-block;
